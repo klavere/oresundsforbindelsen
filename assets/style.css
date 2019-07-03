@@ -7,30 +7,41 @@ html, body {
 
 body {
     background: #F9F2E5 /*#F0DEB7 /*#F5F0EB /*rgb(230,240,255)*/;
-	font-family: "Roboto";
-	padding: 100 px;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-	padding: 5px;
+header
+{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 100px;
 	text-align: center;
 	font-size: smaller;
 	letter-spacing: 10px;
+	position: fixed;
+	top:0;
+	z-index: 1000;
+	background-image: linear-gradient(#F9F2E5, rgba(249, 242, 229, 0));
+}
+
+#content
+{
+	padding-bottom: 50px;
 }
 
 .player {
 	text-align: center;
-	padding: 0px;
+	padding: 20px;
 }
 
-.content {
+.schnitt
+{
+	position: fixed;
+	width: 100%;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 60px;
+	bottom: 0;
+	background-image: linear-gradient(rgba(249, 242, 229, 0),#F9F2E5);
 }
 
 #bridgestart, #firstpylon, #secondpylon, #startislet, #starttunnel, #endtunnel {
@@ -38,13 +49,13 @@ body {
 }
 
 #map {
-	margin-bottom: 20px;
 	height: 270px;
+	padding-top: 150px;
 }
 
 .map {
 	text-align: center;
 	padding-right: 150px;
 	padding-left: 150px;
-	padding-top: 0;
+	padding-top: 5px;
 }
